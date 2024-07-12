@@ -1,13 +1,77 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  font-size: 1rem;
+  background-color: rgba(166, 222, 224, 0.218);
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+form {
+  display: flex;
+  align-items: center;
+  margin: 2rem 3rem;
+}
+label {
+  margin-right: 0.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+input {
+  width: 15rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-right: 0.4rem;
+}
+button {
+  background: none;
+  border: 2px solid blue;
+  border-radius: 4px;
+  background-color: blue;
+  padding: 0.5rem;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+button:hover {
+  opacity: 0.6;
+  transition: all 0.3s linear;
+}
+.error {
+  border-color: red;
+}
+.colors-container {
+  min-height: calc(100vh - 100px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(96px, 1fr));
+}
+article {
+  cursor: pointer;
+}
+.per-value {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.hex-value {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.copy-text {
+  padding: 0 0.5rem;
+}
+.light-color {
+  color: white;
 }
